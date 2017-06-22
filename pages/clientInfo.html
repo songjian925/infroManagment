@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>综合管理信息系统</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../plugins/iCheck/flat/blue.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="../plugins/morris/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="../plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="../plugins/datepicker/datepicker3.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker-bs3.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <!-- Base.css -->
+  <link rel="styleshet" href="../dist/css/base.css">
+
+  <!-- jQuery 2.2.0 -->
+<script src="../plugins/jQuery/jQuery-2.2.0.min.js"></script>
+
+
+  <script type="text/javascript" src="../dist/js/pages/clientInfo.js"></script>
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="../index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">SYS</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>综合管理信息系统</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="hidden-xs">sonic</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <p>
+                  <span>sonic</span>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-right">
+                  <a href="../login.html" id="sign_out" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+     
+      
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+      <li class="header">导航</li>
+        <li>
+          <a href="Administrator.html">
+            <i class="fa fa-th"></i> <span>管理员管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="HRM.html">
+            <i class="fa fa-th"></i> <span>员工管理</span>
+          </a>
+        </li>
+        <li class="tressview">
+          <a href="#">
+            <i class="fa"></i>
+            <span>合同管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="supplierInfo.html"><i class="fa fa-circle-o"></i>供应商信息</a></li>
+            <li><a href="clientInfo.html"><i class="fa fa-circle-o"></i>客户信息</a></li>
+            <li><a href="contract.html"><i class="fa fa-circle-o"></i>合同管理</a></li>
+            <li><a href="supplierInvoiceInfo.html"><i class="fa fa-circle-o"></i>供应商发票</a></li>
+            <li><a href="clientInvoiceInfo.html"><i class="fa fa-circle-o"></i>客户发票</a></li>
+          </ul>
+        </li>
+
+        <li class="tressview">
+          <a href="#">
+            <i class="fa"></i>
+            <span>项目管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="projectLedger.html"><i class="fa fa-circle-o"></i>台账管理</a></li>
+            <li><a href="jingfeimingxi.html"><i class="fa fa-circle-o"></i>经费明细</a></li>
+            <li><a href="cuikuan.html"><i class="fa fa-circle-o"></i>催款通知</a></li>
+            <li><a href="jindu.html"><i class="fa fa-circle-o"></i>进度提醒</a></li>
+            <li><a href="xinxi.html"><i class="fa fa-circle-o"></i>信息统计</a></li>
+            <li><a href="jingfeizhichu.html"><i class="fa fa-circle-o"></i>经费支出</a></li>
+          </ul>
+        </li>
+
+
+        <li class="tressview">
+          <a href="#">
+            <i class="fa"></i>
+            <span>物料管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="flowDetail.html"><i class="fa fa-circle-o"></i>流水明细</a></li>
+            <li><a href="stockLedger.html"><i class="fa fa-circle-o"></i>库存台账</a></li>
+            <li><a href="stockIn.html"><i class="fa fa-circle-o"></i>入库单</a></li>
+            <li><a href="stockOut.html"><i class="fa fa-circle-o"></i>出库单</a></li>
+            <li><a href="statistics.html"><i class="fa fa-circle-o"></i>统计表</a></li>
+          </ul>
+        </li>
+
+        <li class="tressview">
+          <a href="#">
+            <i class="fa"></i>
+            <span>采购系统</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="caigoudingdan.html"><i class="fa fa-circle-o"></i>采购订单</a></li>
+            <li><a href="caigoudingdanLedger.html"><i class="fa fa-circle-o"></i>采购订单台账</a></li>
+            <li><a href="fankuibiao.html"><i class="fa fa-circle-o"></i>反馈表</a></li>
+            <li><a href="tongjibiao.html"><i class="fa fa-circle-o"></i>统计表</a></li>
+          </ul>
+        </li>
+
+
+
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        客户管理
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>导航</a></li>
+        <li class="active">客户管理</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">客户</h3>
+            </div>
+            <!-- /.box-header -->
+            <td align="right">
+                <button name="addClient" value="addClient" class="btn btn-success" data-toggle="modal" data-target="#addClient">增加客户</button>
+            </td>
+            <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>客户编号</th>
+                  <th>名称</th>
+                  <th>地址</th>
+                  <th>开户账号</th>
+                  <th>联系人</th>
+                  <th>联系电话</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody id="table_body">
+                <tr>
+                	<td>1008</td>
+                	<td>kq</td>
+                	<td>江苏省南京市南京林业大学</td>
+                	<td>1234567890</td>
+                	<td>瞿小鸡</td>
+                	<td>15805153897</td>
+                	<td><button name="check" value="check" class="btn btn-info" onclick="checkInfo(this);">查看详情</button><button name="update" value="update" class="btn btn-info" onclick="updateInfo(this);">修改</button><button name="delete" value="delete" class="btn btn-danger " onclick="deleteInfo(this);">删除</button></td>
+                </tr>
+                <tr>
+                  <td>1009</td>
+                  <td>kq</td>
+                  <td>江苏省南京市南京林业大学</td>
+                  <td>1234567890</td>
+                  <td>瞿小鸡</td>
+                  <td>15805153897</td>
+                  <td><button name="check" value="check" class="btn btn-info" onclick="checkInfo(this);">查看详情</button><button name="update" value="update" class="btn btn-info" onclick="updateInfo(this);">修改</button><button name="delete" value="delete" class="btn btn-danger " onclick="deleteInfo(this);">删除</button></td>
+                </tr><tr>
+                  <td>1010</td>
+                  <td>kq</td>
+                  <td>江苏省南京市南京林业大学</td>
+                  <td>1234567890</td>
+                  <td>瞿小鸡</td>
+                  <td>15805153897</td>
+                  <td><button name="check" value="check" class="btn btn-info" onclick="checkInfo(this);">查看详情</button><button name="update" value="update" class="btn btn-info" onclick="updateInfo(this);">修改</button><button name="delete" value="delete" class="btn btn-danger " onclick="deleteInfo(this);">删除</button></td>
+                </tr><tr>
+                  <td>1011</td>
+                  <td>kq</td>
+                  <td>江苏省南京市南京林业大学</td>
+                  <td>1234567890</td>
+                  <td>瞿小鸡</td>
+                  <td>15805153897</td>
+                  <td><button name="check" value="check" class="btn btn-info" onclick="checkInfo(this);">查看详情</button><button name="update" value="update" class="btn btn-info" onclick="updateInfo(this);">修改</button><button name="delete" value="delete" class="btn btn-danger " onclick="deleteInfo(this);">删除</button></td>
+                </tr><tr>
+                  <td>1012</td>
+                  <td>kq</td>
+                  <td>江苏省南京市南京林业大学</td>
+                  <td>1234567890</td>
+                  <td>瞿小鸡</td>
+                  <td>15805153897</td>
+                  <td><button name="check" value="check" class="btn btn-info" onclick="checkInfo(this);">查看详情</button><button name="update" value="update" class="btn btn-info" onclick="updateInfo(this);">修改</button><button name="delete" value="delete" class="btn btn-danger " onclick="deleteInfo(this);">删除</button></td>
+                </tr>
+                
+
+                </tbody>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="addClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加客户</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="clientID">客户编号</label>
+            <input type="text" class="form-control" id="add_clientID" placeholder="客户编号为4位整数">
+          </div>
+          <div class="form-group">
+            <label for="clientName">名称</label>
+            <input type="text" class="form-control" id="add_clientName" placeholder="名称为最长10位的字符">
+          </div>
+          <div class="form-group">
+            <label for="clientAddress">地址</label>
+            <input type="text" class="form-control" id="add_clientAddress" placeholder="地址为最长80位的字符">
+          </div>
+          <div class="form-group">
+            <label for="clientAcount">开户账号</label>
+            <input type="text" class="form-control" id="add_clientAcount" placeholder="开户账号为最长10位的字符">
+          </div>
+          <div class="form-group">
+            <label for="contact">联系人</label>
+            <input type="text" class="form-control" id="add_contact" placeholder="联系人为最长20位的字符">
+          </div>
+          <div class="form-group">
+            <label for="contactPhone">联系电话</label>
+            <input type="text" class="form-control" id="add_contactPhone" placeholder="联系电话为11位整数">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" id="btn_add" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="checkClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel1">客户详情</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="clientID">供货商编号</label>
+            <input type="text" class="form-control" id="check_clientID">
+          </div>
+          <div class="form-group">
+            <label for="clientDate">名称</label>
+            <input type="text" class="form-control" id="check_clientName">
+          </div>
+          <div class="form-group">
+            <label for="clientAddress">地址</label>
+            <input type="text" class="form-control" id="check_clientAddress">
+          </div>
+          <div class="form-group">
+            <label for="clientAcount">开户账号</label>
+            <input type="text" class="form-control" id="check_clientAcount">
+          </div>
+          <div class="form-group">
+            <label for="contact">联系人</label>
+            <input type="text" class="form-control" id="check_contact">
+          </div>
+          <div class="form-group">
+            <label for="contactPhone">联系电话</label>
+            <input type="text" class="form-control" id="check_contactPhone">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">退出</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="updateClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel1">修改客户信息</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="clientID">客户编号</label>
+            <input type="text" class="form-control" id="update_clientID">
+          </div>
+          <div class="form-group">
+            <label for="clientName">名称</label>
+            <input type="text" class="form-control" id="update_clientName">
+          </div>
+          <div class="form-group">
+            <label for="clientAddress">地址</label>
+            <input type="text" class="form-control" id="update_clientAddress">
+          </div>
+          <div class="form-group">
+            <label for="clientAcount">开户账号</label>
+            <input type="text" class="form-control" id="update_clientAcount">
+          </div>
+          <div class="form-group">
+            <label for="contact">联系人</label>
+            <input type="text" class="form-control" id="update_contact">
+          </div>
+          <div class="form-group">
+            <label for="contactPhone">联系电话</label>
+            <input type="text" class="form-control" id="update_contactPhone">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" id="btn_update" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">删除客户</h4>
+      </div>
+       <label for="clientID">客户编号</label>
+       <input type="text" class="form-control" id="delete_clientID">
+
+      <label for="operator">确认操作员</label>
+      <input type="text" class="form-control" id="delete_operator" placeholder="输入操作员姓名">
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" id="btn_delete" class="btn btn-danger">确认删除</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 1.0.0
+    </div>
+    本项目仅供学习交流使用。
+  </footer>
+
+<!-- Bootstrap 3.3.6 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<!-- DataTables -->
+<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- page script -->
+  <!-- Contract -->
+  <script src="../dist/js/pages/clientInfo.js"></script>
+  <script src="../dist/js/base.js"></script>
+
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
+
+</body>
+</html>
+
+</script>
+

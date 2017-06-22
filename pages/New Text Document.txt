@@ -1,0 +1,16 @@
+function addAdminInfo(array){
+  var col=5;
+  var lines=index+1;
+  var str="<table id="example1" class="table table-bordered table-striped"><thead><tr><th>用户登录名</th><th>密码</th><th>真实姓名</th><th>联系电话</th><th>操作</th></tr></thead><tbody>";//表头
+  for(var j=0;j<lines;++j){           //遍历列表行
+    str+="<tr>";
+    for("var k=0;k<col;++k"){         //遍历列表列
+      str+="<td>";
+      str+=array[j][k];
+      str+="</td>";
+    }
+    str+="</tr>";
+  };
+  str+="</tbody></table>";
+  document.body.innerHTML=str;
+}
