@@ -64,7 +64,7 @@ function test() {
 
     
     if(test_json.state=="FAIL")
-        window.location.href='../login.html';
+        window.location.href='../index.html';
 
 
     document.getElementById("RootUsername").innerHTML =getCookie("rootUser");
